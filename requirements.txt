@@ -1,0 +1,11 @@
+# Tested with Python 3.11; Python 3.10-3.12 are intended.
+streamlit>=1.41,<2
+transformers>=4.51,<5
+sentence-transformers>=4.1,<6
+torch>=2.2,<3
+numpy>=1.26,<3
+accelerate>=0.30,<2
+gnani-vachana
+soundfile>=0.12
+scipy>=1.13
+python-dotenv>=1.0,<2

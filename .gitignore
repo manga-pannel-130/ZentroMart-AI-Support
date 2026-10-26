@@ -1,0 +1,16 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.cache/
+cache/
+outputs/
+evaluation/*.json
+evaluation/*.csv
+input_audio/
+review_tmp/
+data/
+kb/
+practice/
+src/tools/tickets_created.csv

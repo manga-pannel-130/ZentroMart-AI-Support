@@ -1,0 +1,72 @@
+[
+  {
+    "index": 1,
+    "conversation_id": "conversation",
+    "input_audio": "conversation_turn_01.wav",
+    "transcript": "i want to talk about the policy of",
+    "reply_text": "Hi! I can check the current policy for returns and refunds, delivery, cancellations, payments, coupons, sellers, and warranties. Which topic are you asking about? For routine questions, I can look up the rule and explain it; a human handover is for cases that meet an escalation rule or when you ask for one. [KB-00.4]",
+    "reply_audio": "audio/0001_conversation_turn_01.wav",
+    "retrieved_sections": [
+      "KB-00.4"
+    ],
+    "retrieved_chunks": [],
+    "decision": "policy_clarify",
+    "tool_calls": [],
+    "status": "ok"
+  },
+  {
+    "index": 2,
+    "conversation_id": "conversation",
+    "input_audio": "conversation_turn_02.wav",
+    "transcript": "how do i return the items that i purchased from the mart",
+    "reply_text": "Open My Orders, raise the return and choose a pickup slot. The executive checks the item against the return-condition rules; after pickup, the warehouse performs a quality check. If it passes, the refund is initiated within 2 business days of pickup, or at pickup for Plus members; the time to reach your account then depends on your payment method. [RVP-1] [RET-4] [RET-7] [REF-2]",
+    "reply_audio": "audio/0002_conversation_turn_02.wav",
+    "retrieved_sections": [
+      "FAQ-3",
+      "RVP-1",
+      "RET-4",
+      "RET-7",
+      "REF-2"
+    ],
+    "retrieved_chunks": [
+      {
+        "section_id": "FAQ-3",
+        "title": "How do I return an item?",
+        "document": "FAQ-GEN",
+        "status": "current",
+        "text": "Suggested customer answer: Open My Orders, raise the return and choose a pickup slot. The executive checks the item against the return-condition rules; after pickup, the warehouse performs a quality check. If it passes, the refund is initiated within 2 business days of pickup, or at pickup for Plus members; the time to reach your account then depends on your payment method. [RVP-1] [RET-4] [RET-7] [REF-2]"
+      },
+      {
+        "section_id": "RVP-1",
+        "title": "Booking",
+        "document": "HLP-RVP",
+        "status": "current",
+        "text": "Raise the return from My Orders. Choose a pickup slot. The delivery executive will check the item at the door against the condition rules in RET-4."
+      },
+      {
+        "section_id": "RET-4",
+        "title": "Condition of returned items",
+        "document": "POL-RET",
+        "status": "current",
+        "text": "Items must be unused, with original tags, packaging, accessories and free gifts. Beauty and personal care products are returnable only if unopened with the seal intact. Electronics must not be physically damaged, and any screen lock or account lock must be removed."
+      },
+      {
+        "section_id": "RET-7",
+        "title": "After pickup",
+        "document": "POL-RET",
+        "status": "current",
+        "text": "Returned items go through a quality check (QC) at the warehouse. The refund is initiated within 2 business days of pickup once the item passes QC. For ZentroMart Plus members, the refund is initiated at the time of pickup. Refund timelines after initiation are in the Refunds policy."
+      },
+      {
+        "section_id": "REF-2",
+        "title": "How long refunds take after initiation",
+        "document": "POL-REF",
+        "status": "current",
+        "text": "Refunds go back to the original payment method. Timelines are counted in business days from the day the refund is initiated.\n\n| Payment method | Time to reach you |\n| --- | --- |\n| UPI | 1 to 3 business days |\n| Credit or debit card | 5 to 7 business days |\n| Net banking | 3 to 5 business days |\n| ZentroMart Wallet | Instant, within 2 hours |\n| Bank transfer (NEFT) for cash-on-delivery orders | 5 to 7 business days |\n| ZentroMart Wallet for cash-on-delivery orders | Instant, within 2 hours |"
+      }
+    ],
+    "decision": "kb_faq",
+    "tool_calls": [],
+    "status": "ok"
+  }
+]
